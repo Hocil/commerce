@@ -1,12 +1,53 @@
-/app.py
-/backup
-/commerce (251011 0347).zip
-/dash (1).ipynb
-/data
-/outline .ipynb
-/pages
-/self-0922.ipynb
-/zb-commerce-ver-2 (1).ipynb
-/zb-commerce-ver-2 (2).ipynb
-/zb-commerce-ver-2 (4).ipynb
-/수정진행중.ipynb
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+*.log
+
+# ---------------------------
+# Jupyter Notebook 자동 생성 파일
+# ---------------------------
+.ipynb_checkpoints/
+*.checkpoint.ipynb
+
+# ---------------------------
+# IDE / OS 관련
+# ---------------------------
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Data & Backup (대용량 / 로컬 전용)
+# ---------------------------
+/data/
+/backup/
+/*.zip
+*.csv
+
+# ---------------------------
+# Streamlit 캐시 및 임시 파일
+# ---------------------------
+.streamlit/
+cache/
+*.tmp
+
+# ---------------------------
+# 개인용/임시 노트북 제외 (필요 시 주석 해제)
+# ---------------------------
+self-*.ipynb
+outline.ipynb
+dash*.ipynb
+commerce_수정.ipynb
+
+# ---------------------------
+# 제외하지 않을 파일 (필요 시 !로 지정)
+# ---------------------------
+!pages/
+!app.py
+!README.md
