@@ -25,10 +25,14 @@ Thumbs.db
 # ---------------------------
 # Data & Backup (대용량 / 로컬 전용)
 # ---------------------------
-/data/
 /backup/
 /*.zip
-*.csv
+/data/*
+!data/events_sample.csv
+!data/users.csv
+!data/orders.csv
+!data/order_items.csv
+!data/products.csv
 
 # ---------------------------
 # Streamlit 캐시 및 임시 파일
