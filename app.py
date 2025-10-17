@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import koreanize_matplotlib
+# import koreanize_matplotlib
 
 
 st.set_page_config(page_title="메인 페이지"
