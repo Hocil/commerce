@@ -21,7 +21,7 @@ def load_and_prepare_data(base_path="data/"):
     products = pd.read_csv(base_path + "products.csv")
     orders = pd.read_csv(base_path + "orders.csv")
     order_items = pd.read_csv(base_path + "order_items.csv")
-    events = pd.read_csv(base_path + "events.csv")
+    events = pd.read_csv(base_path + "events_sample.csv")
     inventory_items = pd.read_csv(base_path + "inventory_items.csv")
 
     # 2. 날짜 변환

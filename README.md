@@ -6,9 +6,8 @@ Kaggle Dataset : https://www.kaggle.com/datasets/mustafakeser4/looker-ecommerce-
 
 
 ### 📊 주요 기능  
-- Activation / Revenue / Retention 분석  
-- Streamlit 기반 대시보드  
-- 샘플 데이터(2023년 기준 50,000행) 사용
+- Activation / Revenue / Retention / Acquisition 분석  
+- Streamlit 기반 대시보드 게시
 
 **실행 URL:** https://hocil-commerce.streamlit.app
 
