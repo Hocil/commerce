@@ -2,11 +2,15 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-st.image("data/cover2.jpg")
+import koreanize_matplotlib
+
+
 st.set_page_config(page_title="메인 페이지"
                 #    ,layout="wide"
                    ,page_icon="🏠"
                    )
+
+st.image("data/cover2.jpg")
 
 st.title("🛒 Looker Ecommerce")
 st.write("왼쪽 사이드바에서 분석 페이지를 선택하세요.")
@@ -29,7 +33,7 @@ def load_data(base_path="data/"):
     products = pd.read_csv(base_path + "products.csv")
     orders = pd.read_csv(base_path + "orders.csv")
     order_items = pd.read_csv(base_path + "order_items.csv")
-    events = pd.read_csv(base_path + "events.csv")
+    events = pd.read_csv(base_path + "events_sample.csv")
     inventory_items = pd.read_csv(base_path + "inventory_items.csv")
     return users, products, orders, order_items, events, inventory_items
 
@@ -54,6 +58,7 @@ st.write("#### Orders 상태 비율")
 fig, ax = plt.subplots()
 orders["status"].value_counts().plot(kind="bar", ax=ax, color="skyblue")
 ax.set_ylabel("Count")
+plt.tight_layout()
 st.pyplot(fig)
 
 

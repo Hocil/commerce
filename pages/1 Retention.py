@@ -7,14 +7,16 @@ import calendar
 import numpy as np
 import matplotlib.patheffects as pe
 from matplotlib.ticker import PercentFormatter
-
-import matplotlib.pyplot as plt
+import koreanize_matplotlib  # ← 가장 위 import 라인 근처에 추가
 from matplotlib import font_manager, rc
 
-# 윈도우 폰트 지정
-font_path = "C:/Windows/Fonts/malgun.ttf"
-font_name = font_manager.FontProperties(fname=font_path).get_name()
-rc('font', family=font_name)
+st.set_page_config(page_title="🛍️ 사용자 구매 패턴 분석", page_icon="🛍️", layout="wide")
+
+
+# # 윈도우 폰트 지정
+# font_path = "C:/Windows/Fonts/malgun.ttf"
+# font_name = font_manager.FontProperties(fname=font_path).get_name()
+# rc('font', family=font_name)
 
 
 # from data import load_all_data
@@ -389,7 +391,7 @@ def create_repeat_purchaser_chart(orders_df):
     return fig, m2023
 
 @st.cache_data
-def create_weekly_cohort_heatmap(orders_df, selected_month, max_age_w, show_annotations=True):
+def create_weekly_cohort_heatmap_simple(orders_df, selected_month, max_age_w, show_annotations=True):
     """
     선택된 월에 시작된 주간 코호트의 재구매율을 분석하고 히트맵을 생성합니다.
     """
@@ -852,8 +854,8 @@ def create_weekly_cohort_heatmap(orders_df, selected_month, selected_week, max_a
 
 # --- 🎨 메인 대시보드 레이아웃 ---
 
-st.set_page_config(layout="wide", page_title="구매 분석")
-st.title("🛍️ 사용자 구매 패턴 분석")
+# st.set_page_config(layout="wide", page_title="구매 분석")
+# st.title("🛍️ 사용자 구매 패턴 분석")
 
 # --- 데이터 로딩 ---
 all_data = load_all_data()

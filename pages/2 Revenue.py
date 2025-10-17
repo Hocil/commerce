@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import textwrap
+import koreanize_matplotlib
 
 # ---------------- 페이지 기본 설정 ----------------
 st.set_page_config(
