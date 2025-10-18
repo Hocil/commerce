@@ -1,7 +1,7 @@
-# force rebuild
+# --- Force Rebuild ---
 streamlit==1.39.0
 pandas==2.2.2
 numpy==1.26.4
-matplotlib==3.9.0
-seaborn==0.13.2
-# koreanize-matplotlib
+matplotlib
+seaborn
+koreanize-matplotlib
