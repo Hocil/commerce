@@ -33,6 +33,7 @@ Thumbs.db
 !data/orders.csv
 !data/order_items.csv
 !data/products.csv
+!data/inventory_items.csv
 !data/dataset-cover.png
 !data/cover2.jpg
 
