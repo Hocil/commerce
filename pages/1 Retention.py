@@ -7,7 +7,7 @@ import calendar
 import numpy as np
 import matplotlib.patheffects as pe
 from matplotlib.ticker import PercentFormatter
-# import koreanize_matplotlib
+import koreanize_matplotlib
 from matplotlib import font_manager, rc
 
 st.set_page_config(page_title="🛍️ 사용자 구매 패턴 분석", page_icon="🛍️", layout="wide")
